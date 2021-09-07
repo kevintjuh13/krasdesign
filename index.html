@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kras design</title>
+
+    <link rel="stylesheet" href="css/huisstijl.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div id="header">
+        <div id="banner">
+            <img src="img/placeholder.png" id="logo">
+            <div id="title">
+                <h1>Kras design</h1>
+                <h2>Een kras mediaconcept voor ieder bedrijf</h2>
+            </div>
+            <div id="languages">
+                <button id="dutchButton">Nederlands</button>
+                <button id="englishButton">English</button>
+            </div>
+
+        </div>
+        <div id="nav">
+            <a href="index.html" class="navItem">Home</a>
+            <a href="pages-nl/diensten.html" class="navItem">Diensten</a>
+            <a href="pages-nl/portofolio.html" class="navItem">Portofolio</a>
+            <a href="pages-nl/verhuizing.html" class="navItem">Verhuizing</a>
+            <a href="pages-nl/domein.html" class="navItem">Domein</a>
+            <a href="pages-nl/over_ons.html" class="navItem">Over ons en contact</a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="intro">
+            <div>
+                <h2>Introductie kras design</h2>
+                <p>
+                    Gegroet, wij als in KrasDesign zijn een bedrijf die levert wat er gevraagd word. 20 jaar geleden hebben ik (Jan) en Freek dit mooie bedrijf opgericht, wij zijn mega trots op wat het is geworden. KrasDesign begon als een klein bedrijf die logo’s ontwierp voor de particuliere bedrijven en zzp’ers. We hadden uiteindelijk besloten meer uit dit bedrijf te halen, alleen logo’s voldeed het niet voor ons, na een tijd brainstormen kwam ik bij Freek met het idee om custom websites en bepaalde huisstijlen te maken en uiteindelijk te verkopen aan de koper. Dit idee heeft ons gemaakt wie wij nu zijn, met het brede assortiment aan diensten die wij bieden, maken wij elk idee mogelijk. Dat is uiteindelijk waar het om gaat voor KrasDesign. Een kras mediaconcept voor elk bedrijf.
+            </div>
+            <img src="img/placeholder.png">
+        </div>
+        <div id="verhuizing">
+            <div id="verhuizingInfo">
+                <h2>Over onze verhuizing</h2>
+                <div>
+                    <img src="img/placeholder.png"/>
+                    <p>
+                        Het is eindelijk zover! Wij gaan verhuizen! Het pand waar wij de afgelopen 20 jaar in hebben gewerkt word verledentijd. Het werd hoogtijd voor een uitbreiding, door ons brede assortiment en het steeds meer groeiende aantal aan medewerkers en sollicitaties vraagt dat ook om meer ruimte, meer informatie over de verhuizing kunt u vinden bij het kopje: Verhuizing!
+
+                    </p>
+                </div>
+            </div>
+            <div id="emailInputField">
+                <h2>Wilt U op de hoogte blijven over onze verhuizing? Meld U hier dan onder aan</h2>
+                <form method="post" action="">
+                    <label>email adres</label>
+                    <input type="email" name="email">
+                    <input type="submit" value="Verstuur" id="submitButton">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+<script>
+    const bodyLength = document.getElementById("main");
+    console.log(bodyLength.offsetHeight);
+    console.log(screen.height - 270);
+    if (bodyLength.offsetHeight < screen.height - 270) {
+        const length = screen.height - 400;
+        document.body.style.gridTemplateRows = "200px " + length.toString() + "px 70px"
+    }
+</script>
+</html>
